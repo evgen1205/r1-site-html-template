@@ -1,10 +1,10 @@
-@import url(styleMain.css);
+@import url(style_main.css);
 
 h1{
 	font-size:18px;
-	margin-bottom:6px;
+	margin:0 0 6px;
 	width:97%;
-	padding-top:4px;
+	padding:4px 0 0;
 	color:#8e1211;
 	border-bottom:1px solid #8e1211;
 }
@@ -16,7 +16,7 @@ h1{
 }
 
 .content ul{
-	padding-left:16px;
+	padding:0 0 0 16px;
 }
 
 .works_container img{

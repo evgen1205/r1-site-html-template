@@ -24,7 +24,7 @@ body, html{
 .container{
     min-height:100%;
     max-width:980px;
-    margin:0 auto 16px;
+    margin:0 auto;
 }
 .container:after{
 	display:block;
@@ -76,19 +76,16 @@ nav a{
     display:block;
     padding:0 28px;
     color:#de1514;
-    font-size:16px;
     line-height:38px;
     text-decoration:none;
     text-align:center;
 }
-nav a:hover{
+nav a:hover, .nav_active{
     color:#8e1211;
     text-shadow:1px 0 0 #8e1211;
 }
 .nav_active{
-	color:#8e1211;
 	background:#fefefe;
-	text-shadow:1px 0 0 #8e1211;
 }
 nav>ul>li{
     display:inline-block;
@@ -102,7 +99,7 @@ h2, h3{
 	color:#8e1211;
 	border-bottom:1px solid #8e1211;
 }
-.siteName{
+.sitename{
 	font-size:26px;
 	font-weight:bold;
 	position:absolute;
@@ -110,11 +107,10 @@ h2, h3{
 	bottom:16px;
 	color:#333;
 }
-.siteName a{
+.sitename a{
 	color:inherit;
 	text-decoration:none;
 }
-
 h3{
 	color:#d7736e;
 	border-bottom:1px solid #d7736e;
@@ -126,6 +122,13 @@ h4, h4 a{
 	font-size:18px;
 }
 
+noscript{
+	display:block;
+	position:relative;
+	width:600px;
+	height:330px;
+	margin:0 auto;
+}
 .slider{
     height:364px;
     max-width:700px;
@@ -140,7 +143,7 @@ h4, h4 a{
 	position:relative;
 	overflow:hidden;
 }
-.slidewrapper{
+.slideWrapper{
     width:600px;
     height:330px;
     position:absolute;
@@ -153,7 +156,6 @@ h4, h4 a{
 	height:330px;
 	list-style:none;
 	float:left;
-
 }
 .caption{
 	display:block;
@@ -174,7 +176,7 @@ h4, h4 a{
     position:absolute;
     bottom:0;
     left:0;
-    padding-left:7%;
+    padding:0 0 0 7%;
 }
 .sliderButton{
 	display:inline-block;
@@ -214,21 +216,21 @@ h4, h4 a{
 	display:inline-block;
 	vertical-align:top;
 	width:72%;
-	padding-right:16px;
+	padding:0 16px 0 0;
 }
 .content p{
 	margin:6px 8px 8px;
 }
 
 article{
-    margin:0 0 30px 0;
+    margin:0 0 20px 0;
 }
 
 .sidebar{
     display:inline-block;
     vertical-align:top;
     width:28%;
-    padding-top:32px;
+    padding:32px 0 0;
 }
 .sidebar a{
 	color:inherit;
@@ -243,7 +245,7 @@ article{
 }
 
 .partner{
-	padding-left:16px;
+	padding:0 0 0 16px;
 }
 .partner a{
 	text-decoration:none;
@@ -266,7 +268,7 @@ footer a:hover{
     text-decoration:underline;
 }
 
-@media screen and (max-width: 980px) {
+@media screen and (max-width: 979px) {
 	.container, .footer{
 		width:98%;
 	}
@@ -278,7 +280,7 @@ footer a:hover{
 	}
 }
 
-@media screen and (max-width: 680px) {
+@media screen and (max-width: 679px) {
 	.slider{
 		width:600px;
 	}
@@ -298,7 +300,7 @@ footer a:hover{
 	}
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 649px) {
 	.content, .sidebar{
 		display:block;
 		width:auto;
@@ -331,9 +333,12 @@ footer a:hover{
 		margin:0 12px 12px 0;
 		vertical-align:top;
 	}
+	noscript{
+		display:none;
+	}
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 479px) {
 	.header_socio{
 		top:100%;
 	}
