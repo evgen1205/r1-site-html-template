@@ -50,19 +50,12 @@ header{
     top:0;
     height:100%;
 }
-#logo img{
-    height:100%;
-}
 
 .header_socio{
 	position:absolute;
 	right:0;
 	top:0;
 	text-align:right;
-}
-.header_socio img{
-	width:112px;
-	height:44px;
 }
 
 nav{
@@ -136,14 +129,14 @@ noscript{
     position:relative;
     display:none /*JS shows*/
 }
-.slideContainer{
+.slide_container{
 	width:600px;
 	height:357px;
 	margin:0 auto;
 	position:relative;
 	overflow:hidden;
 }
-.slideWrapper{
+.slide_wrapper{
     width:600px;
     height:330px;
     position:absolute;
@@ -172,13 +165,13 @@ noscript{
 	opacity:0.85;
 	padding:2px 16px;
 }
-.buttonContainer{
+.button_container{
     position:absolute;
     bottom:0;
     left:0;
     padding:0 0 0 7%;
 }
-.sliderButton{
+.slider_button{
 	display:inline-block;
     width:14px;
     height:14px;
@@ -189,7 +182,7 @@ noscript{
     cursor:pointer;
     background:#fefefe url(../img/buttons.png) -1px -1px;
 }
-.buttonContainer a.active{
+.button_container a.active{
     background:#fefefe url(../img/buttons.png) -16px -1px;
 }
 .arrows{
@@ -291,7 +284,7 @@ footer a:hover{
 		border-right-color:#ddd;
 	}
 
-	.buttonContainer{
+	.button_container{
 		padding:0;
 	}
 
@@ -306,14 +299,11 @@ footer a:hover{
 		width:auto;
 	}
 
-	.siteName{
+	.sitename{
 		top:6px;
 		left:84px;
 		font-size:22px;
 		line-height:30px;
-	}
-	#logo, #logo img{
-		width:82px;
 	}
 
 	nav{
