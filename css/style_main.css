@@ -160,7 +160,6 @@ noscript{
 	color:#8e1211;
 	position:absolute;
 	bottom:0;
-	filter: alpha(opacity=85);
 	-moz-opacity:0.85;
 	opacity:0.85;
 	padding:2px 16px;
